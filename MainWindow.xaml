@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:ETstrikesBack"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Canvas>
-        <Button x:Name="btnPlay" Content="Play Game" Click="BtnPlay_Click"/>
-        <Button x:Name="btnScores" Content="See High Scores" Click="BtnScores_Click" Canvas.Top="44"/>
-        <Button x:Name="btnQuit" Content="quit" Click="BtnQuit_Click" Canvas.Left="10" Canvas.Top="102"/>
+  <Canvas Background="Black">
+        <Button x:Name="btnPlay" Content="Play Game" Click="BtnPlay_Click" FontFamily="Impact" FontSize="24" Background="Gold"
+                Height="139" Width="481" Canvas.Left="10" Canvas.Top="270"/>
+        <Button x:Name="btnScores" Content="See High Scores" Click="BtnScores_Click" FontFamily="Impact" FontSize="24" Background="Aqua"
+                Canvas.Top="271" Height="136" Width="286" Canvas.Left="496"/>
+        <Button x:Name="btnQuit" Content="Quit" Click="BtnQuit_Click" FontFamily="Impact" FontSize="24" Background="Red"
+                Canvas.Left="708" Height="63" Width="84"/>
+        <Label x:Name="lblTitle" Content="ET Strikes Back" FontFamily="Impact" FontSize="50" Background="White" 
+               Canvas.Left="232" Canvas.Top="10"/>
     </Canvas>
 </Window>
