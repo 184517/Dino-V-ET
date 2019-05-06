@@ -36,6 +36,13 @@ namespace ETstrikesBack
             timer.Start();
             player = new Player(test, canvas);
             player.pMovement();
+            Rectangle r = new Rectangle();
+            BitmapImage bi = new BitmapImage(new Uri("ETBackground.png", UriKind.Relative));
+            ImageBrush img = new ImageBrush(bi);
+            r.Fill = img;
+            r.Height = 650;
+            r.Width = 420;
+            canvas.Children.Add(r);
         }
 
 
