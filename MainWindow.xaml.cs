@@ -23,6 +23,24 @@ namespace ETstrikesBack
         public MainWindow()
         {
             InitializeComponent();
+            Rectangle r = new Rectangle();
+            BitmapImage bi = new BitmapImage(new Uri("MainWindowET.png", UriKind.Relative));
+            ImageBrush img = new ImageBrush(bi);
+            r.Fill = img;
+            r.Height = 600;
+            r.Width = 600;
+            canvas.Children.Insert(0, r);
+
+        
+            Rectangle rect = new Rectangle();
+            BitmapImage bit = new BitmapImage(new Uri("ETCharacter.png", UriKind.Relative));
+            ImageBrush image = new ImageBrush(bit);
+            rect.Fill = image;
+            rect.Height = 300;
+            rect.Width = 300;
+            Canvas.SetLeft(rect, 150);
+            Canvas.SetBottom(rect, 150);
+            canvas.Children.Add(rect);
         }
 
         private void BtnQuit_Click(object sender, RoutedEventArgs e)
